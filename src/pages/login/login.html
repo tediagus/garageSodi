@@ -1,0 +1,16 @@
+<ion-content padding>
+ <h3>The Garage</h3>
+  <div class="loginBox">
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" placeholder="identfiant" name="identifiant" [(ngModel)]="identifiant" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div>
+      <button ion-button (click)="loginEvent()">Login</button>
+    </div>
+  </div>
+</ion-content>

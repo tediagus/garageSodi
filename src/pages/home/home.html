@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>The Garage</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <!--Todo rajouter un controle seul les user connecter peuvent le voir -->
+   <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+
+  <div>
+    <h3 color="twitter">Les prochains évenements</h3>
+    <ion-card *ngFor="let atelier of ateliers" >
+      <ion-item (click)="itemTapped($event, atelier)">
+        <ion-avatar item-left>
+          <img src={{atelier.image}}>
+        </ion-avatar>
+        <h2>{{atelier.title}}</h2>
+        <p>Le {{atelier.dateEvent}}</p>
+      </ion-item>
+      <ion-card-content>
+        <p>{{atelier.resume}}</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col ion-button icon-left clear small>
+          <ion-icon name="people"></ion-icon>
+          <div>{{atelier.nbInscrit}}/{{atelier.nbParticipant}}</div>
+        </ion-col>
+        
+        <ion-col ion-button icon-left clear small (click)="showMessageEvent($event)">
+         <ion-icon name="chatbubbles"></ion-icon>
+         <div>{{atelier.messages.length}}</div>
+         </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+</ion-content>

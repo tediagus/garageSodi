@@ -1,0 +1,49 @@
+  { 
+    "pole": [
+        { "libelle": "Technique" },
+        { "libelle": "Management" }
+    ],
+    "salle": [
+        { "libelle": "digital" },
+        { "libelle": "Batman" },
+        { "libelle": "Superman" },
+        { "libelle": "Thor" }
+
+    ],
+    "users" : [
+        {
+            "id" :1,
+            "nom": "Coulibaly",
+            "prenom" : "Tédiaga",
+            "mail": "tcoulibaly@sodifrance.fr",
+            "motdepass": "aze/123"
+        },
+        {
+            "id" :2,
+            "nom": "Tétaux",
+            "prenom" : "Florent",
+            "mail": "ftetaux@sodifrance.fr",
+            "motdepass": "aze/123"
+        },
+        {
+            "id" :3,
+            "nom": "Dupond",
+            "prenom" : "Elisabeth",
+            "mail": "edupond@sodifrance.fr",
+            "motdepass": "aze/123"
+        },
+        {
+            "id" :4,
+            "nom": "Hernadez",
+            "prenom" : "Ruan-martin",
+            "mail": "rmhernadez@sodifrance.fr",
+            "motdepass": "aze/123"
+        },
+        {
+            "id" :5,
+            "nom": "Durand",
+            "prenom" : "Soline",
+            "mail": "sdurand@sodifrance.fr",
+            "motdepass": "aze/123"
+        }
+  }

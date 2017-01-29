@@ -1,0 +1,50 @@
+ [
+        {
+            "title":"Ionic (session 2)",
+            "image": "assets/img/angular-2-ionic-2-home.png",
+            "masterUser": "Mathieu JesaisTout", 
+            "nbParticipant": 8,
+            "nbInscrit": 8, 
+            "dateEvent":"16/12/2016", 
+            "resume":"Suite au retour positive de la première session, allons un peu plus loin ...",
+            "messages":[
+            {"dtsaisie" :"10/10/2016","user":"1", "message" :"Hello" },
+            {"dtsaisie" :"10/10/2016","user":"5", "message" :"hella" },
+            {"dtsaisie" :"10/10/2016","user":"1", "message" :"Coool" },
+            {"dtsaisie" :"10/10/2016","user":"3", "message" :"Ya du monde " },
+            {"dtsaisie" :"10/10/2016","user":"3", "message" :"Ca peut etre sympas" },
+            {"dtsaisie" :"10/10/2016","user":"1", "message" :"Coool" },
+            {"dtsaisie" :"10/10/2016","user":"2", "message" :"Coool" }
+            ]
+        },
+        {
+            "title":"PHP 7",
+            "image": "assets/img/7php_v2-elroubio.png",
+            "masterUser": "Alex Onverabien", 
+            "nbParticipant": 15,
+            "nbInscrit": 4, 
+            "dateEvent":"10/01/2017", 
+            "resume":"Echange et découverte des nouvelles fonctionnalités",
+            "messages":[]
+        },
+        {
+            "title": "React",
+            "image": "assets/img/react.png",
+            "masterUser": "Thibaut Voitou", 
+            "nbParticipant": 12,
+            "nbInscrit": 2, 
+            "dateEvent":"05/05/2017", 
+            "resume":"Le framework par Facebook",
+            "messages":[]
+        },
+            {
+            "title": "Retour expérience gestion de projet",
+            "image": "",
+            "masterUser": "Thibaut Voitou", 
+            "nbParticipant": 12,
+            "nbInscrit": 2, 
+            "dateEvent":"05/05/2017", 
+            "resume":"blabla blabla blabla",
+            "messages":[]
+        }
+    ]

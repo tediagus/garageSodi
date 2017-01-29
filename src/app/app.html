@@ -1,0 +1,26 @@
+<ion-menu [content]="content">
+
+  <ion-header>
+    <ion-toolbar>
+       <ion-item>
+         <ion-avatar item-left>
+          <img src="assets/img/avatar.jpg">
+        </ion-avatar>
+        <h2>User Name</h2>
+      </ion-item>
+    
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      <button ion-item color="danger" (click)="deconnexionEvent()">déconnexion</button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedAtelier">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Atelier : {{selectedAtelier.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="img/marty-avatar.png">
+    </ion-avatar>
+    <h2>{{selectedAtelier.masterUser}}</h2>
+    <p>Le {{selectedAtelier.dateEvent}}</p>
+  </ion-item>
+
+  <!--img src="img/advance-card-bttf.png"-->
+
+  <ion-card-content>
+    <p>{{selectedAtelier.resume}}</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>0 J'aime</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>{{selectedAtelier.messages.length}} Commentaire</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        doc
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+</ion-content>
