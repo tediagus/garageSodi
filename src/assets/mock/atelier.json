@@ -1,5 +1,6 @@
  [
         {
+            "id": 1,
             "title":"Ionic (session 2)",
             "image": "assets/img/angular-2-ionic-2-home.png",
             "masterUser": "Mathieu JesaisTout", 
@@ -18,6 +19,7 @@
             ]
         },
         {
+            "id": 2,
             "title":"PHP 7",
             "image": "assets/img/7php_v2-elroubio.png",
             "masterUser": "Alex Onverabien", 
@@ -28,6 +30,7 @@
             "messages":[]
         },
         {
+            "id": 3,
             "title": "React",
             "image": "assets/img/react.png",
             "masterUser": "Thibaut Voitou", 
@@ -37,7 +40,8 @@
             "resume":"Le framework par Facebook",
             "messages":[]
         },
-            {
+        {
+            "id": 4,
             "title": "Retour expérience gestion de projet",
             "image": "",
             "masterUser": "Thibaut Voitou", 

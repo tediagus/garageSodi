@@ -8,7 +8,6 @@ export interface Atelier {
      nbParticipant: number,
      nbInscrit: number, 
      dateEvent: Date, 
-    resume: string,
-    messages: [Message]
-
+     resume: string,
+     messages: [Message]
 }
