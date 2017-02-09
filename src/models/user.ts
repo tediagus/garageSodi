@@ -4,5 +4,7 @@ export interface User {
     nom: string,
     prenom : string,
     mail: string,
-    motdepass: string
+    motdepass: string,
+    identifiant: string
+    avatar? : string
 }

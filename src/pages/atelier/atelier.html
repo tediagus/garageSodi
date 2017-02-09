@@ -8,11 +8,11 @@
 </ion-header>
 <ion-content padding>
 
-  <!--Todo rajouter un controle seul les user connecter peuvent le voir -->
+  <!--Todo rajouter un controle seul les user connecter peuvent le voir >
    <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
     </ion-fab>
-
+    -->
   <div>
     <h3 color="twitter">Les prochains évenements</h3>
     <ion-card *ngFor="let atelier of ateliers" >
@@ -27,12 +27,12 @@
         <p>{{atelier.resume}}</p>
       </ion-card-content>
       <ion-row>
-        <ion-col ion-button icon-left clear small>
+        <ion-col ion-button icon-left clear small (click)="showParticipantAtelier($event, atelier)">
           <ion-icon name="people"></ion-icon>
-          <div>{{atelier.nbInscrit}}/{{atelier.nbParticipant}}</div>
+          <div>{{atelier.inscrits.length}}/{{atelier.nbMaxInscrit}}</div>
         </ion-col>
         
-        <ion-col ion-button icon-left clear small (click)="showMessageEvent($event)">
+        <ion-col ion-button icon-left clear small (click)="showMessageAtelier($event, atelier)">
          <ion-icon name="chatbubbles"></ion-icon>
          <div>{{atelier.messages.length}}</div>
          </ion-col>

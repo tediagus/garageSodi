@@ -5,8 +5,11 @@ import { NavController } from 'ionic-angular';
   selector: 'page-profil',
   templateUrl: 'profil.html'
 })
+
+
 export class ProfilPage {
   
   constructor( public navCtrl: NavController) { }
 
 }
+

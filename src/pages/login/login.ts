@@ -1,33 +1,40 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {HomePage} from '../home/home';
-import {AlertController} from 'ionic-angular'
+import { NavController, LoadingController, Loading} from 'ionic-angular';
+import { NgForm } from '@angular/forms';
+
+import {AtelierPage} from '../atelier/atelier';
+import { User } from "../../models/user";
+import { UserService } from "../../providers/users-service";
 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
 })
-export class LoginPage {
-    identifiant;
-    password;
 
-  constructor( public navCtrl: NavController, public alertCtrl: AlertController) { }
+export class LoginPage {
+ 
+  loading :Loading
+  identifiant?: string;
+  password?: string ;
+
+  constructor( public navCtrl: NavController, private userService: UserService, private loadingCtrl: LoadingController) { }
 
   /*Gestion de l'authentification*/
-  loginEvent(){
-      // recuperation du service login 
-      if(this.identifiant == 'admin' && this.password =="admin"){
-        // redirection vers la page d'accueil
-       this.navCtrl.setRoot(HomePage);   
-      }else {
+  loginEvent(UserService){
+    this.showLoading();
+    let login ={identifiant: this.identifiant, password:this.password};
+    this.userService.login(login).subscribe(res =>{
+        //TODO VERIFIER LA CONNEXION
+        this.loading.dismiss();
+        this.navCtrl.setRoot(AtelierPage)
+      
+    });
+  }
 
-        let alert = this.alertCtrl.create({
-          title:'Avertissement',
-          subTitle : "L'identifiant ou le mot de passe saisie sont incorrect",
-          buttons:['Ok']
-        })
-        
-        alert.present();
-      }
+  showLoading() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Veillez patienter...'
+    });
+    this.loading.present();
   }
 }

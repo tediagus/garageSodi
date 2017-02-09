@@ -1,27 +1,27 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { GarageListPage } from '../pages/garageList/garageList';
-import { GarageDetailPage } from '../pages/garage-detail/garage-detail';
+
+import { AtelierPage } from '../pages/atelier/atelier';
+import { AtelierDetailPage } from '../pages/atelier-detail/atelier-detail';
+import { ParticipantPage } from '../pages/participant/participant';
 import { LoginPage } from '../pages/login/login';
+import { ProfilPage } from '../pages/profil/profil';
 import { MessagePage } from '../pages/messages/message';
 import { AgendaPage } from '../pages/agenda/agenda';
 import { AtelierService } from "../providers/atelier-service";
-import { MessageService } from "../providers/message-service";
-
+import { UserService } from '../providers/users-service';
 
 @NgModule({
   declarations: [
     MyApp,
     LoginPage,
-    HomePage,
-    ItemDetailsPage,
-    GarageListPage, 
-    GarageDetailPage,
+    AtelierPage,
+    AtelierDetailPage,
+    ProfilPage,
     MessagePage, 
-    AgendaPage
+    AgendaPage, 
+    ParticipantPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,13 +30,13 @@ import { MessageService } from "../providers/message-service";
   entryComponents: [
     MyApp,
     LoginPage,
-    HomePage,
-    ItemDetailsPage,
-    GarageListPage, 
-    GarageDetailPage,
+    ProfilPage,
+    AtelierPage,
+    AtelierDetailPage,
     MessagePage, 
-    AgendaPage
+    AgendaPage, 
+    ParticipantPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, MessageService, AtelierService]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, UserService, AtelierService]
 })
 export class AppModule {}

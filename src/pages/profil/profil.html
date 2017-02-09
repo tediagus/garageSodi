@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>The Garage</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-left>
+               <img src="assets/img/avatar.jpg">
+            </ion-avatar>
+            <h2>User Name</h2>
+        </ion-item>
+
+        <ion-card-content>
+           <ion-list>
+                <ion-item>
+                    <ion-label fixed>Nom</ion-label>
+                    <ion-input type="text" value="user "></ion-input>
+                </ion-item>
+                <ion-item>  
+                    <ion-label fixed>Prénom</ion-label>
+                    <ion-input type="text" value="name "></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>profil</ion-label>
+                    <ion-select [(ngModel)]="profil">
+                        <ion-option value="dev" ng-selected="dev">Developpeur</ion-option>
+                        <ion-option value="arch">Architecte</ion-option>
+                        <ion-option value="cprj">Chef de projet</ion-option>
+                        <ion-option value="autr">autre</ion-option>
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                        sauvegarder
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                    Annuler
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>

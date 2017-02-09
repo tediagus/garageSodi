@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
-import { GarageDetailPage} from "../garage-detail/garage-detail";
+import { AtelierDetailPage} from "../atelier-detail/atelier-detail";
 
 import { Atelier } from "../../models/atelier";
 import { AtelierService } from "../../providers/atelier-service";
-//import { MessagePage } from '../messages/message';
-
-//import { MessageService } from "../../providers/message-service";
+import { MessagePage } from '../messages/message';
+import { ParticipantPage } from '../participant/participant';
 
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-atelier',
+  templateUrl: 'atelier.html'
 })
 
-export class HomePage {
+export class AtelierPage {
   
   ateliers: Atelier[];
 
@@ -27,18 +26,18 @@ export class HomePage {
   }
 
   itemTapped(event, item) {
-    this.navCtrl.push(GarageDetailPage, {item});
+    this.navCtrl.push(AtelierDetailPage, {item});
   }
 
-
-
-  
-
-/*  showMessageAtelier($event){
-
-    let messages = this.MessageService.load($event);
-
-    let modal = this.modalCtrl.create(MessagePage, messages);
+  showMessageAtelier(event, atelier){
+    let modal = this.modalCtrl.create(MessagePage,atelier.messages);
     modal.present();
-  }*/
+  }
+
+  showParticipantAtelier(event, atelier){
+    console.log(atelier.title);
+    let modal = this.modalCtrl.create(ParticipantPage, atelier);
+    modal.present();
+  }
+
 }

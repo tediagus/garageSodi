@@ -1,4 +1,5 @@
 import { Message } from "./message";
+import { User } from "./user";
 
 export interface Atelier {
 
@@ -6,8 +7,9 @@ export interface Atelier {
      image: string,
      masterUser: [string], 
      nbParticipant: number,
-     nbInscrit: number, 
+     nbMaxInscrit: number, 
      dateEvent: Date, 
      resume: string,
      messages: [Message]
+     particpant: [User]
 }

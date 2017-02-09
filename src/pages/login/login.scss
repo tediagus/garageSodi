@@ -1,12 +1,63 @@
 page-login {
-    .loginBox {
-        margin-top: 50%;
-    }
 
-    .fixed-content {
-   // background-color: #222E3B;
+  .fixed-content {
+    // background-color: #222E3B;
     background: url("/assets/img/garage.jpg") no-repeat center fixed;
     background-size: cover;
-}
+  }
+
+  .loginBox{
+    position: relative;
+    background: rgba(#ffffff, 0.3);
+    max-width: 70%;
+    width: 100%;
+    border-top: 5px solid #0b252f;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 12% auto;
+  }
+  
+  .loginBox form{
+    padding: 40px;
+  }
+
+
+  .loginBox form ion-card ion-card-header h3{
+    margin: 0 0 20px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    border: none;
+  }
+
+
+ .loginBox  ion-item ion-input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    font-weight: 400;
+    box-sizing: border-box;    
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+
+  .loginBox ion-card ion-card-content ion-item ion-input:focus {
+  //  border: 1px solid #33b5e5;
+    color: #333333;
+  }
+
+  .loginBox ion-card ion-card-content button {
+      cursor: pointer;
+      background: #33b5e5;
+      width: 100%;
+      border: 0;
+      padding: 10px 15px;
+      color: #ffffff;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+  }
 
 }

@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
-import {Atelier} from "../models/atelier";
+import {User} from "../models/user";
 
 
 /*
@@ -13,15 +13,22 @@ import {Atelier} from "../models/atelier";
   for more info on providers and Angular 2 DI.
 */
 @Injectable()
-export class AtelierService {
+export class UserService {
 
   garageApiRest = "http://localhost:3000/api";
 
   constructor(public http: Http) { }
 
   //recuperation de tout les utilisateurs
-  load(): Observable<Atelier[]> {
-      return this.http.get(`${this.garageApiRest}/ateliers`)
-      .map(res => <Atelier[]>res.json());
+  load(): Observable<User[]> {
+      return this.http.get(`${this.garageApiRest}/users`)
+      .map(res => <User[]>res.json());
+  }
+
+
+  //recuperation des parametre de connexion
+  login(urlParam):Observable<User[]> {
+    return this.http.post(`${this.garageApiRest}/login`,urlParam)
+    .map(res => <User[]>res.json())
   }
 }

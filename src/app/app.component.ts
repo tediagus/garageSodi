@@ -1,38 +1,47 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { Platform, MenuController, Nav } from 'ionic-angular';
-
+import { Events, Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { GarageListPage } from '../pages/garageList/garageList';
+import { AtelierPage } from '../pages/atelier/atelier';
 import { AgendaPage } from '../pages/agenda/agenda';
 import { ProfilPage } from '../pages/profil/profil';
 
 
+import { UserData } from "../providers/user-data";
+
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
+
   @ViewChild(Nav) nav: Nav;
 
   // make Homepage the root (or first) page
-  rootPage: any =HomePage; // LoginPage 
+  rootPage: any = LoginPage; //HomePage
   pages: Array<{title: string, component: any}>;
 
   constructor(
     public platform: Platform,
-    public menu: MenuController
+    public menu: MenuController,
+    public events: Events
+    
   ) {
     this.initializeApp();
 
     // set our app's pages
     this.pages = [
-      { title: 'Les ateliers', component: GarageListPage },
+      { title: 'Les ateliers', component: AtelierPage },
       { title: 'Calendrier', component: AgendaPage },
       { title: 'Mon profil', component: ProfilPage },
     ];
+
+
+
+  /*  this.userData.hasLoggedIn().then(hasLogged) =>{
+      this.enableMenu(hasLoggedIn === true)
+    }*/
   }
 
   initializeApp() {
