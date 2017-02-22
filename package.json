@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "0.0.47",
+    "cordova-plugin-camera": "^2.3.1",
     "typescript": "2.0.9"
   },
   "cordovaPlugins": [
