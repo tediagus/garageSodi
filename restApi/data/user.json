@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nom": "Coulibaly",
+        "prenom": "Tediaga",
+        "identifiant":"tcoulibaly", 
+        "password": "aze/123",
+        "mail": "tcoulibaly@sodifrance.fr"
+    },
+    {
+        "id": 1,
+        "nom": "Dupont",
+        "prenom": "Alain",
+        "password": "aze/123",
+        "mail": "tcoulibaly@sodifrance.fr"
+    },
+    {
+        "id": 3,
+        "nom": "Jesaistout",
+        "prenom": "Marc",
+        "password": "aze/123",
+        "mail": "tcoulibaly@sodifrance.fr"
+    },
+    {
+        "id": 4,
+        "nom": "Fingerinthenose",
+        "prenom": "Thomas",
+        "password": "aze/123",
+        "mail": "tcoulibaly@sodifrance.fr"
+    },
+    {
+        "id": 5,
+        "nom": "Durand",
+        "prenom": "Paul",
+        "password": "aze/123",
+        "mail": "tcoulibaly@sodifrance.fr"
+    }
+]

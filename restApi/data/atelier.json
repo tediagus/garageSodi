@@ -1,0 +1,104 @@
+ [
+        {
+            "id": 1,
+            "title":"Ionic (session 2)",
+            "image": "assets/img/angular-2-ionic-2-home.png",
+            "masterUser": "Mathieu JesaisTout", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"16/12/2016", 
+            "resume":"Suite au retour positive de la première session, allons un peu plus loin ...",
+            "messages":[
+                {"dtsaisie" :"10/10/2016","user":"1", "message" :"Hello" },
+                {"dtsaisie" :"10/10/2016","user":"5", "message" :"hella" },
+                {"dtsaisie" :"10/10/2016","user":"1", "message" :"Coool" },
+                {"dtsaisie" :"10/10/2016","user":"3", "message" :"Ya du monde " },
+                {"dtsaisie" :"10/10/2016","user":"3", "message" :"Ca peut etre sympas" },
+                {"dtsaisie" :"10/10/2016","user":"1", "message" :"Coool" },
+                {"dtsaisie" :"10/10/2016","user":"2", "message" :"Coool" }
+            ],
+            "inscrits":[
+                { "nom": "Renard", "prenom":"Tom", "email" : "trenard@test.com"},
+                { "nom": "Mo", "prenom":"Hamed", "email" : "hmo@test.com"},
+                { "nom": "Stark", "prenom":"Tony", "email" : "tstark@test.com"},
+                { "nom": "Willis", "prenom":"Bruce", "email" : "bwillis@test.com"},
+                { "nom": "Dallas", "prenom":"Corben", "email" : "cdallas@test.com"},
+                { "nom": "Wayne", "prenom":"bruce", "email" : "bwayned@test.com"},
+                { "nom": "Drogba", "prenom":"Didier", "email" : "ddrogba@test.com"},
+                { "nom": "Carter", "prenom":"Dan", "email" : "cdan@test.com"}
+            ]
+        },
+        {
+            "id": 2,
+            "title":"PHP 7",
+            "image": "assets/img/7php_v2-elroubio.png",
+            "masterUser": "Alex Onverabien", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"10/01/2017", 
+            "resume":"Echange et découverte des nouvelles fonctionnalités",
+            "messages":[],
+            "inscrits":[
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"},
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"},
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"},
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"}
+            ]   
+        },
+        {
+            "id": 3,
+            "title": "React",
+            "image": "assets/img/react.png",
+            "masterUser": "Thibaut Voitou", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"05/05/2017", 
+            "resume":"Le framework par Facebook",
+            "messages":[],
+            "inscrits":[
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"},
+                { "nom": "Renard", "prenom":"tom", "email" : "trenard@test.com"}
+            ]   
+        },
+        {
+            "id": 4,
+            "title": "Retour expérience gestion de projet",
+            "image": "",
+            "masterUser": "Thibaut Voitou", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"05/05/2017", 
+            "resume":"blabla blabla blabla",
+            "messages":[],
+            "inscrits":[]  
+        },
+        {
+            "id": 5,
+            "title": "Retour expérience gestion de projet",
+            "image": "",
+            "masterUser": "Thibaut Voitou", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"05/05/2017", 
+            "resume":"blabla blabla blabla",
+            "messages":[],
+            "inscrits":[]  
+        },
+        {
+            "id": 6,
+            "title": "Retour expérience gestion de projet",
+            "image": "",
+            "masterUser": "Thibaut Voitou", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"05/05/2017", 
+            "resume":"blabla blabla blabla",
+            "messages":[],
+            "inscrits":[]  
+        },
+        {
+            "id": 7,
+            "title": "Retour expérience gestion de projet",
+            "image": "",
+            "masterUser": "Thibaut Voitou", 
+            "nbMaxInscrit": 8,
+            "dateEvent":"05/05/2017", 
+            "resume":"blabla blabla blabla",
+            "messages":[],
+            "inscrits":[]  
+        }
+    ]
