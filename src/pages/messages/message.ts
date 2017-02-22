@@ -8,7 +8,21 @@ import { NavParams } from 'ionic-angular';
 export class MessagePage {
 
     messages: Object[];
+    newMessage?: string;
+
     constructor( public params: NavParams) {
         this.messages =  this.params.data;
+    }
+
+
+
+    /* Simulation d'un envoie de message */
+    sendMessage(){
+        var date = new Date();
+
+        this.messages.push( {"dtsaisie" : date ,"user":"test", "message" :this.newMessage });
+        this.newMessage ="";
+        return this.messages;
+
     }
 }

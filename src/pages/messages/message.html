@@ -20,4 +20,11 @@
     {{  message.message }}
   </ion-card-content>
 </ion-card>
+<form >
+    <ion-item>
+        <ion-textarea placeholder="Laisser un message" [(ngModel)]="newMessage" name="newMessage"></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" block (click)="sendMessage()"> <ion-icon name="send"></ion-icon>
+</button>
+</form>
 </ion-content>

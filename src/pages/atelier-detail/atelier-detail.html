@@ -14,7 +14,8 @@
     <ion-avatar item-left>
       <img src={{selectedAtelier.image}}>
     </ion-avatar>
-    <h2>{{selectedAtelier.masterUser}}</h2>
+    <h2> {{selectedAtelier.title}}</h2>
+    <p>Animé par : {{selectedAtelier.masterUser}}</p>
     <p>Le {{selectedAtelier.dateEvent}}</p>
   </ion-item>
 
@@ -26,13 +27,13 @@
 
   <ion-row>
     <ion-col>
-      <button ion-button icon-left clear small>
+      <button ion-button icon-left clear small (click) = "like()">
         <ion-icon name="thumbs-up"></ion-icon>
-        <div>0 J'aime</div>
+        <div>{{nbLike}} J'aime</div>
       </button>
     </ion-col>
     <ion-col>
-      <button ion-button icon-left clear small>
+      <button ion-button icon-left clear small (click)="showMessageAtelier($event, selectedAtelier)">
         <ion-icon name="text"></ion-icon>
         <div>{{selectedAtelier.messages.length}} Commentaire</div>
       </button>
