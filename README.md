@@ -47,4 +47,3 @@ ionic serve
 
 N'hésitez pas à me faire une retour si vous rencontrer des difficultés pour lancer l'application.
 
-[test](www.google.fr "test" "target=blank")
